@@ -1,13 +1,13 @@
 var playlist = {odesza: 'intro'}
 
-function updatePlaylist(obj, key, value) {
-  obj[key] = value;
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
   
-  return obj;
+  return playlist;
 }
 
-function removeFromPlaylist(obj, key) {
-  delete obj.key;
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist.artistName;
   
   return playlist;
 }
